@@ -11,11 +11,11 @@ var neighborhoodDescriptor = "NPA";
 // the choropleth will automagically get an opacity of 40%.
 // the baseMaps is set in a try/catch so when Node reads the file independently it doesn't
 // face plant on L is not defined.
-var baseTilesURL = "http://tiles.mcmap.org/meckbase/{z}/{x}/{y}.png";
+var baseTilesURL = "http://gis.greensboro-nc.gov/arcgis/rest/services/Basemaps/GrayCanvas_NoAddress_wgs_BMS/MapServer/tile/{z}/{y}/{x}";
 try {
     var baseMaps = {
       'Data': L.tileLayer(''),
-      'Mecklenburg': L.tileLayer('http://tiles.mcmap.org/meckbase/{z}/{x}/{y}.png', {
+      'Mecklenburg': L.tileLayer('http://gis.greensboro-nc.gov/arcgis/rest/services/Basemaps/GrayCanvas_NoAddress_wgs_BMS/MapServer/tile/{z}/{y}/{x}', {
         'attribution': 'Map data &copy; Mecklenburg County'
         }),
       'OpenStreetMap': L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {

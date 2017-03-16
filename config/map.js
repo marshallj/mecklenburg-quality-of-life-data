@@ -26,12 +26,13 @@
 
 let mapConfig = {
     //style: "./style/osm-mecklenburg.json",
-    style: "./style/positron-mecklenburg.json",
+    //style: "./style/positron-mecklenburg.json",
+    style: "./style/osm-liberty.json"
     zoomEmbed: 9.5,
     zoom: 9.3,
-    centerEmbed: [-80.815,35.31],
-    center: [-80.84, 35.26],
-    maxBounds: [[-83.285, 33.180],[-78.255, 37.384]],
+    centerEmbed: [-79.7920, 36.0726],
+    center: [-79.7920, 36.0726],
+    maxBounds: [[-80.040240, 35.925840],[-79.453026, 36.248265]],
     minZoom: 8,
     preserveDrawingBuffer: navigator.userAgent.toLowerCase().indexOf('firefox') > -1,  // fix for Firefox print
     neighborhoodsSelectedBefore: 'water_label',
